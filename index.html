@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>LUMI One | Intelligent Minimalist Desk Light</title>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for custom brand colors -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#080B10',
+            brandSurface: '#121721',
+            brandSurfaceBorder: '#1e2636',
+            brandLime: '#c3f400',
+            brandLimeMuted: '#9abf02'
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', '"SF Pro Display"', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styling for subtle glowing touches and mobile iOS feel -->
+<style data-purpose="custom-ui-effects">
+    .glow-lime {
+      box-shadow: 0 0 24px -4px rgba(195, 244, 0, 0.28);
+    }
+    .text-glow {
+      text-shadow: 0 0 12px rgba(195, 244, 0, 0.4);
+    }
+    .safe-top {
+      padding-top: env(safe-area-inset-top, 12px);
+    }
+    .safe-bottom {
+      padding-bottom: env(safe-area-inset-bottom, 20px);
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-brandLime selection:text-black">
+<!-- BEGIN: NavigationBar -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-brandDark/85 border-b border-brandSurfaceBorder/60 safe-top" data-purpose="main-navigation">
+<div class="px-5 py-3.5 flex items-center justify-between max-w-md mx-auto">
+<!-- Logo Branding -->
+<a aria-label="LUMI Home" class="text-xl font-black tracking-wider text-white flex items-center gap-1.5" href="#">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-brandLime"></span>
+<span>LUMI</span>
+</a>
+<!-- Quick Nav Links & CTA -->
+<div class="flex items-center space-x-3 text-xs tracking-wide">
+<a class="text-slate-400 hover:text-white transition-colors" href="#features">Features</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#modes">Modes</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#specs">Specs</a>
+<a class="bg-brandLime text-black font-semibold px-3 py-1.5 rounded-full hover:bg-brandLimeMuted transition-colors duration-150" href="#pricing">
+          Pre-order
+        </a>
+</div>
+</div>
+</header>
+<!-- END: NavigationBar -->
+<main class="max-w-md mx-auto px-5 pb-16 space-y-20">
+<!-- BEGIN: HeroSection -->
+<section class="pt-6 text-center space-y-6" data-purpose="hero">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandLime/10 border border-brandLime/25 text-brandLime text-xs font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-brandLime animate-pulse"></span>
+          Next-Gen Workspace Illumination
+        </div>
+<h1 class="text-3xl font-extrabold tracking-tight text-white leading-tight">
+          Light made to keep you in the zone.
+        </h1>
+<p class="text-sm text-slate-400 px-2 leading-relaxed">
+          LUMI One adapts to the way you work, study and unwind. Crafted with precision optics and intuitive timeflow controls.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 pt-1">
+<a class="w-full py-3.5 px-6 rounded-2xl bg-brandLime text-black font-bold text-sm tracking-wide text-center glow-lime hover:opacity-95 transition-all" href="#pricing">
+          Discover LUMI
+        </a>
+<a class="w-full py-3.5 px-6 rounded-2xl bg-brandSurface border border-brandSurfaceBorder text-slate-300 font-medium text-sm text-center flex items-center justify-center gap-2 hover:bg-slate-800 transition" href="#modes">
+<svg class="w-4 h-4 text-brandLime" fill="currentColor" viewbox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Watch Demo
+        </a>
+</div>
+<!-- Hero Product Photography -->
+<div class="relative pt-2 rounded-3xl overflow-hidden border border-brandSurfaceBorder/80 bg-brandSurface" data-purpose="hero-image-wrapper">
+<img alt="Studio product photography of LUMI One, a futuristic sleek minimalist matte black and brushed gunmetal smart desk lamp. Slender architectural cantilever design with an integrated diffuse LED light bar casting a soft warm-and-crisp dual glow onto a dark luxury workstation. On the circular base, a smartphone is wirelessly charging with a faint lime green halo ring indicator, and a glowing digital capacitive touch slider and Pomodoro timer display. High-end dark studio lighting, moody atmosphere, dark background (#080B10), cinematic reflections, award-winning industrial design." class="w-full h-auto object-cover aspect-square" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe3OQdTyEDmlXOHj1mgYxTtL27PhhjVtYePU9e6-sf9_bhaly2XsNaZYfdq9pnnCCuRARE3d26SVUQ-s4JAVK9M38_i48SQAcaD1L6QLW92rkOOS1ll5yzFpaekNgtNi3Z2NH246VvgSSQaWsGKumBxMhyiWSKcaUeg2Zfj6JVum3E0uNjk-0kySa4LZM4asfT1I19GXi51vrvp61iyolL9z1LX8StMe9-g0aEVXL0NHtzHMkRcNbX"/>
+<div class="absolute bottom-3 left-3 right-3 bg-black/75 backdrop-blur-md rounded-xl p-3 border border-white/10 text-left flex justify-between items-center">
+<div>
+<div class="text-[11px] uppercase tracking-wider text-brandLime font-semibold">Flagship Design</div>
+<div class="text-xs text-slate-200">Cantilever Arm &amp; Wireless Qi Base</div>
+</div>
+<span class="text-xs text-brandLime bg-brandLime/15 border border-brandLime/30 px-2 py-0.5 rounded font-mono">15W Qi</span>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: FeaturesSection -->
+<section class="space-y-5" data-purpose="key-features" id="features">
+<div class="text-center space-y-1">
+<h2 class="text-xs uppercase tracking-widest text-brandLime font-bold">Engineered For Focus</h2>
+<h3 class="text-2xl font-bold tracking-tight text-white">Every detail considered.</h3>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Feature 1: Adaptive Lighting -->
+<article class="p-5 rounded-2xl bg-brandSurface border border-brandSurfaceBorder space-y-2">
+<div class="w-10 h-10 rounded-xl bg-brandLime/15 text-brandLime flex items-center justify-center font-bold">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<h4 class="text-base font-semibold text-white">Adaptive Lighting</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Ambient light sensors read your room tone 60 times a minute to auto-adjust lux levels and prevent ocular fatigue.</p>
+</article>
+<!-- Feature 2: Focus Timer (With Image 1) -->
+<article class="rounded-2xl bg-brandSurface border border-brandSurfaceBorder overflow-hidden">
+<img alt="Close-up detailed macro shot of the capacitive touch base of the LUMI One smart desk lamp, showing a glowing minimalist Pomodoro timer dial and illuminated smart mode icons (Focus, Relax, Night) with electric lime accent lighting, matte dark titanium finish, premium industrial tech product shot." class="w-full h-52 object-cover" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbvG0ZprDKBMRPlRtnJQ0BDi5TYpkw8gGrmkZsqZVowWOGGaPtq5fo_j2-bA1GYeBJGCpGKUfIp-FAjVRQeM4gyaO6EU2Z2eq2KM2VeG13IZeWYO-4GU4dvFNz6GUhH4RwduuDrAVJrJQAQF3Zuli4evCgFGK_nNlNrxVIuXRXw_ycijJDP0TK0EGK-noSVZ0_L36OS3EAgQzu9e3B_D0RjCV56fvtjNzkfwMEvW1uIxsm9NQwRL5C"/>
+<div class="p-5 space-y-2">
+<div class="flex items-center justify-between">
+<h4 class="text-base font-semibold text-white">Focus Timer Dial</h4>
+<span class="text-[11px] bg-brandLime/20 text-brandLime font-mono px-2 py-0.5 rounded">Pomodoro Built-In</span>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed">Integrated haptic capacitive dial with 25-minute sprints and soft subtle pulses to reset attention.</p>
+</div>
+</article>
+<!-- Feature 3: Wireless Charging Base -->
+<article class="p-5 rounded-2xl bg-brandSurface border border-brandSurfaceBorder space-y-2">
+<div class="w-10 h-10 rounded-xl bg-brandLime/15 text-brandLime flex items-center justify-center font-bold">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<h4 class="text-base font-semibold text-white">Wireless Charging Base</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Fast-charge your smartphone or earbuds directly on the weighted non-slip pedestal with electric lime halo feedback.</p>
+</article>
+<!-- Feature 4: Smart Controls -->
+<article class="p-5 rounded-2xl bg-brandSurface border border-brandSurfaceBorder space-y-2">
+<div class="w-10 h-10 rounded-xl bg-brandLime/15 text-brandLime flex items-center justify-center font-bold">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<h4 class="text-base font-semibold text-white">Smart Capacitive Slider</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Gliding gesture control across the anodized aluminum base for frictionless dimming and spectrum shifting.</p>
+</article>
+</div>
+</section>
+<!-- END: FeaturesSection -->
+<!-- BEGIN: SmartModesSection -->
+<section class="space-y-5" data-purpose="smart-modes" id="modes">
+<div class="text-center space-y-1">
+<h2 class="text-xs uppercase tracking-widest text-brandLime font-bold">Illumination Profiles</h2>
+<h3 class="text-2xl font-bold tracking-tight text-white">Smart Modes for your rhythm.</h3>
+</div>
+<div class="space-y-4">
+<!-- Mode: Focus -->
+<div class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-slate-800 border border-brandLime/30 flex items-center justify-center flex-shrink-0">
+<span class="text-brandLime font-mono text-xs font-bold">5000K</span>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-white">Focus Mode</h4>
+<p class="text-xs text-slate-400">Crisp, non-glare daylight illumination to maximize mental alertness and deep work.</p>
+</div>
+</div>
+<!-- Mode: Relax (Featured with Lifestyle Image 2) -->
+<div class="rounded-2xl bg-brandSurface border border-brandSurfaceBorder overflow-hidden">
+<img alt="Lifestyle photo of a modern aesthetic student study desk setup at night, illuminated by the LUMI One sleek architectural desk lamp in warm relaxing ambient mode. Wooden desk, mechanical keyboard, notebook, cozy ambient mood, dark moody background, high fidelity cinematic lighting." class="w-full h-56 object-cover" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm3DmBDVeFDbF8aEfR85wYo-4RA-kJKRSh7s42ZiXIQR4gGUTRS0oOsrsamcp72zd4C5V_263ogdmAs0l8_oVsxnMc1QSI8GiTUrH30NmH97vnBFpjapK_Re4QxMJ4RHHbSmeOD6-3Sb1L4ai1QCgS5WTk4HLCZ09Pz5HpYeR5oU0L_dstJByaPRncv2G6ZWuufaXVXdW6LXwzEqdBFE5JP-G06l_d4J5yIzbopQWXTMu_-qB--UCD"/>
+<div class="p-4 space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="text-sm font-semibold text-white">Relax Mode</h4>
+<span class="text-[11px] font-mono text-brandLime bg-brandLime/10 px-2 py-0.5 rounded">3000K Warm Glow</span>
+</div>
+<p class="text-xs text-slate-400">Balanced, soothing golden rays ideal for reading, journaling, and evening coding sessions.</p>
+</div>
+</div>
+<!-- Mode: Night -->
+<div class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-slate-800 border border-amber-500/30 flex items-center justify-center flex-shrink-0">
+<span class="text-amber-400 font-mono text-xs font-bold">1800K</span>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-white">Night Mode</h4>
+<p class="text-xs text-slate-400">Gentle warm amber that reduces blue light to zero, preparing your mind for deep restorative sleep.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SmartModesSection -->
+<!-- BEGIN: HowItWorksSection -->
+<section class="space-y-6" data-purpose="how-it-works">
+<div class="text-center space-y-1">
+<h2 class="text-xs uppercase tracking-widest text-brandLime font-bold">Seamless Routine</h2>
+<h3 class="text-2xl font-bold tracking-tight text-white">How It Works</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Step 1 -->
+<div class="p-4 rounded-2xl bg-brandSurface/70 border border-brandSurfaceBorder flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-brandLime text-black font-bold flex items-center justify-center text-sm shrink-0">1</div>
+<div class="space-y-1">
+<h4 class="text-sm font-semibold text-white">Choose your mode</h4>
+<p class="text-xs text-slate-400">Tap the touch surface to switch instantly between Focus, Relax, or Night profiles.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-4 rounded-2xl bg-brandSurface/70 border border-brandSurfaceBorder flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-brandLime text-black font-bold flex items-center justify-center text-sm shrink-0">2</div>
+<div class="space-y-1">
+<h4 class="text-sm font-semibold text-white">LUMI adapts</h4>
+<p class="text-xs text-slate-400">Optical sensors dynamically modulate brightness to eliminate desk shadows and glare.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-4 rounded-2xl bg-brandSurface/70 border border-brandSurfaceBorder flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-brandLime text-black font-bold flex items-center justify-center text-sm shrink-0">3</div>
+<div class="space-y-1">
+<h4 class="text-sm font-semibold text-white">Stay focused</h4>
+<p class="text-xs text-slate-400">Turn the Pomodoro dial, drop your phone on the Qi pad, and complete your flow uninterrupted.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HowItWorksSection -->
+<!-- BEGIN: SpecificationsSection -->
+<section class="space-y-5" data-purpose="technical-specifications" id="specs">
+<div class="text-center space-y-1">
+<h2 class="text-xs uppercase tracking-widest text-brandLime font-bold">Hardware Performance</h2>
+<h3 class="text-2xl font-bold tracking-tight text-white">Product Specifications</h3>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Spec 1 -->
+<div class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder text-center space-y-1">
+<span class="text-xs text-slate-400">Brightness</span>
+<div class="text-xl font-bold text-white tracking-tight">1200</div>
+<div class="text-[11px] text-brandLime font-medium">Lumens Peak</div>
+</div>
+<!-- Spec 2 -->
+<div class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder text-center space-y-1">
+<span class="text-xs text-slate-400">Color Accuracy</span>
+<div class="text-xl font-bold text-white tracking-tight">98 CRI</div>
+<div class="text-[11px] text-brandLime font-medium">True Spectrum</div>
+</div>
+<!-- Spec 3 -->
+<div class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder text-center space-y-1">
+<span class="text-xs text-slate-400">Color Temp</span>
+<div class="text-xl font-bold text-white tracking-tight">1800K–6500K</div>
+<div class="text-[11px] text-brandLime font-medium">Infinitely Variable</div>
+</div>
+<!-- Spec 4 -->
+<div class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder text-center space-y-1">
+<span class="text-xs text-slate-400">Chassis</span>
+<div class="text-xl font-bold text-white tracking-tight">Aluminum</div>
+<div class="text-[11px] text-brandLime font-medium">Anodized Space Gunmetal</div>
+</div>
+</div>
+</section>
+<!-- END: SpecificationsSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="space-y-5" data-purpose="customer-reviews">
+<div class="text-center space-y-1">
+<h2 class="text-xs uppercase tracking-widest text-brandLime font-bold">Community Tested</h2>
+<h3 class="text-2xl font-bold tracking-tight text-white">Loved by creators.</h3>
+</div>
+<div class="space-y-3">
+<!-- Review 1: Student -->
+<blockquote class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder space-y-2">
+<div class="flex text-brandLime text-xs">★★★★★</div>
+<p class="text-xs text-slate-300 italic leading-relaxed">
+            “The Pomodoro dial helped me survive finals week without burning out. The warm light makes long nights at the desk remarkably easy on my eyes.”
+          </p>
+<footer class="text-xs text-slate-400 font-medium">
+            — Maya T., <span class="text-slate-500">Architecture Student</span>
+</footer>
+</blockquote>
+<!-- Review 2: Engineer -->
+<blockquote class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder space-y-2">
+<div class="flex text-brandLime text-xs">★★★★★</div>
+<p class="text-xs text-slate-300 italic leading-relaxed">
+            “As a software engineer working late shifts, crisp illumination without glare on three matte screens is everything. LUMI One nailed the ergonomics.”
+          </p>
+<footer class="text-xs text-slate-400 font-medium">
+            — David K., <span class="text-slate-500">Systems Engineer</span>
+</footer>
+</blockquote>
+<!-- Review 3: Designer -->
+<blockquote class="p-4 rounded-2xl bg-brandSurface border border-brandSurfaceBorder space-y-2">
+<div class="flex text-brandLime text-xs">★★★★★</div>
+<p class="text-xs text-slate-300 italic leading-relaxed">
+            “With 98 CRI, color swatches and physical print proofs look exact. The sleek industrial cantilever silhouette turns my desk into a design gallery.”
+          </p>
+<footer class="text-xs text-slate-400 font-medium">
+            — Sarah L., <span class="text-slate-500">Industrial Product Designer</span>
+</footer>
+</blockquote>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: PricingSection -->
+<section class="space-y-4" data-purpose="pricing-card" id="pricing">
+<div class="text-center space-y-1">
+<h2 class="text-xs uppercase tracking-widest text-brandLime font-bold">Limited Batch</h2>
+<h3 class="text-2xl font-bold tracking-tight text-white">Reserve your LUMI One</h3>
+</div>
+<div class="p-6 rounded-3xl bg-brandSurface border-2 border-brandLime/40 relative overflow-hidden space-y-6 glow-lime">
+<div class="flex justify-between items-start">
+<div>
+<span class="inline-block text-[11px] font-bold text-black bg-brandLime px-2.5 py-0.5 rounded-full uppercase tracking-wider mb-2">First Edition</span>
+<h4 class="text-xl font-bold text-white">LUMI One</h4>
+<p class="text-xs text-slate-400">Complete smart desk setup kit</p>
+</div>
+<div class="text-right">
+<span class="text-3xl font-extrabold text-white tracking-tight">$149</span>
+<div class="text-[11px] text-slate-400 line-through">$199 MSRP</div>
+</div>
+</div>
+<ul class="text-xs text-slate-300 space-y-2.5">
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brandLime" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path></svg>
+            1200 lm Adaptive LED Cantilever Bar
+          </li>
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brandLime" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path></svg>
+            Weighted Qi Fast Wireless Charging Base
+          </li>
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brandLime" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path></svg>
+            Capacitive Pomodoro Dial &amp; Light Sensor
+          </li>
+<li class="flex items-center gap-2">
+<svg class="w-4 h-4 text-brandLime" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path></svg>
+            2-Year Replacement Warranty &amp; Free Shipping
+          </li>
+</ul>
+<button class="w-full py-4 rounded-xl bg-brandLime text-black font-extrabold text-sm tracking-wider uppercase hover:bg-brandLimeMuted transition" type="button">
+          Pre-order Now
+        </button>
+</div>
+</section>
+<!-- END: PricingSection -->
+<!-- BEGIN: FinalCTA -->
+<section class="text-center py-6 px-4 rounded-3xl bg-gradient-to-b from-brandSurface to-brandDark border border-brandSurfaceBorder space-y-4" data-purpose="call-to-action">
+<div class="w-12 h-12 mx-auto rounded-full bg-brandLime/20 text-brandLime flex items-center justify-center">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.001z"></path></svg>
+</div>
+<div class="space-y-1">
+<h3 class="text-2xl font-bold tracking-tight text-white">Upgrade your workspace.</h3>
+<p class="text-xs text-slate-400">Bring calm clarity and peak focus to your daily workflow.</p>
+</div>
+<a class="inline-block w-full py-3.5 px-6 rounded-2xl bg-brandLime text-black font-bold text-sm tracking-wide text-center glow-lime hover:opacity-95 transition-all" href="#pricing">
+        Get LUMI One
+      </a>
+</section>
+<!-- END: FinalCTA -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-black/80 border-t border-brandSurfaceBorder/60 py-10 px-6 safe-bottom" data-purpose="page-footer">
+<div class="max-w-md mx-auto space-y-6 text-center">
+<!-- Footer Logo -->
+<div class="flex items-center justify-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-brandLime"></span>
+<span class="text-lg font-black tracking-widest text-white">LUMI</span>
+</div>
+<p class="text-xs text-slate-500 max-w-xs mx-auto">
+        Designed for thinkers, builders, and nocturnal dreamers.
+      </p>
+<!-- Navigation Links -->
+<nav aria-label="Footer Navigation" class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-slate-400">
+<a class="hover:text-brandLime transition-colors" href="#features">Features</a>
+<a class="hover:text-brandLime transition-colors" href="#modes">Smart Modes</a>
+<a class="hover:text-brandLime transition-colors" href="#specs">Tech Specs</a>
+<a class="hover:text-brandLime transition-colors" href="#pricing">Pre-order</a>
+<a class="hover:text-brandLime transition-colors" href="#">Support</a>
+<a class="hover:text-brandLime transition-colors" href="#">Privacy</a>
+</nav>
+<!-- Social Media Icons -->
+<div class="flex justify-center space-x-5 text-slate-400 pt-2" data-purpose="social-links">
+<!-- X / Twitter -->
+<a aria-label="LUMI on Twitter" class="hover:text-brandLime transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<!-- Instagram -->
+<a aria-label="LUMI on Instagram" class="hover:text-brandLime transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- YouTube -->
+<a aria-label="LUMI on YouTube" class="hover:text-brandLime transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</div>
+<!-- Copyright Notice -->
+<div class="text-[11px] text-slate-600 pt-3">
+        © <span id="year">2025</span> LUMI Labs Inc. All rights reserved.
+      </div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- Light dynamic script for setting year -->
+<script data-purpose="current-year">
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body></html>
